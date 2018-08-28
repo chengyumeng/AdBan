@@ -32,16 +32,10 @@ chrome.storage.sync.get({leftAd:true,rightAd: true, anonymity: true, speedBlock:
 
 $(document).ready(function() {
     $("#donate").click(function () {
-
-        if ($("#donate").attr("state") === "hide") {
-            $("#QRcode").slideDown("fast");
-            $("#donate").text("收起 ▲");
-            $("#donate").attr("state", "show")
-        }
-        else if ($("#donate").attr("state") === "show") {
-            $("#QRcode").slideUp("fast");
-            $("#donate").text("支持作者 ▼");
-            $("#donate").attr("state", "hide")
+        if ($("#zhifubaoimg").hasClass("hidden")) {
+            $("#zhifubaoimg").removeClass("hidden");
+        } else {
+            $("#zhifubaoimg").addClass("hidden");
         }
     });
 });

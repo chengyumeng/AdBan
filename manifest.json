@@ -18,7 +18,7 @@
          "run_at": "document_start"
       }
    ],
-   "description": "致力于清理掉一切浏览器广告，百度、360 等。\n 并同时支持隐藏身份和访问提速等功能。",
+   "description": "致力于清理掉一切浏览器、搜索引擎广告，百度、360 等。\n 并同时支持隐藏身份和访问提速等功能。",
    "icons": {
       "128": "images/logo.png",
       "16": "images/logo.png",
@@ -27,6 +27,6 @@
    "manifest_version": 2,
    "name": "AdBan",
    "permissions": [ "storage", "cookies", "webRequest", "webRequestBlocking", "*://*.baidu.com/*", "*://*.so.com/*", "tabs" ],
-   "version": "0.0.2",
+   "version": "0.0.3",
    "web_accessible_resources": [ "images/*" ]
 }
