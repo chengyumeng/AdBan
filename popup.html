@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdBan Settings</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<h2 class="ui icon header padded">
+    <div class="content">
+        AdBan Settings
+    </div>
+</h2>
+<div class="ui attached stackable menu">
+    <div class="ui container">
+        <a class="item">
+           <div class="ui toggle checkbox">
+            <input class="box" id="leftAd" type="checkbox" value="leftAd"/>
+            <label>一般清理</label>
+        </div>
+        </a>
+        <a class="item">
+            <div class="ui toggle checkbox">
+                <input class="box" id="rightAd" type="checkbox" value="rightAd"/>
+                <label>清除右边栏广告</label>
+            </div>
+        </a>
+        <a class="item">
+            <div class="ui toggle checkbox">
+                <input class="box" id="anonymity" type="checkbox" value="anonoymity"/>
+                <label>隐藏身份</label>
+            </div>
+        </a>
+        <a class="item">
+            <div class="ui toggle checkbox">
+                <input class="box" id="speedBlock" type="checkbox" value="speedBlock"/>
+                <label>访问提速</label>
+            </div>
+        </a>
+        <a class="item">
+            <div class="ui toggle checkbox">
+                <input class="box" id="hardClean" type="checkbox" value="hardClean"/>
+                <label>强力清除推广</label>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="ui statistic">
+    <div class="label">
+        请选择您要清理的网站:
+    </div>
+</div>
+<div class="ui form">
+    <div class="inline fields">
+        <div class="field">
+            <div class="ui radio checkbox">
+                <!--<input type="radio" name="frequency" checked="checked">-->
+                <input class="box" id="baidu" type="checkbox" value="baidu"/>
+                <label>百度</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input class="box" id="qihoo" type="checkbox" value="qihoo"/>
+                <label>360</label>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+</body>
+</html>
