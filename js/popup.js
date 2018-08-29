@@ -5,7 +5,7 @@ function reload(){
     });
 }
 
-chrome.storage.sync.get({leftAd:true,rightAd: true, anonymity: true, speedBlock:true,hardClean: true,baidu:true,qihoo:true}, function (items) {
+chrome.storage.sync.get({leftAd:true,rightAd: true, anonymity: false, speedBlock:true,hardClean: true,baidu:true,qihoo:false}, function (items) {
     for(key in items ) {
         console.log(key + items[key]);
         document.getElementById(key).checked = items[key];

@@ -27,7 +27,7 @@ function doClearCookie() {
 }
 
 function doBackend() {
-    chrome.storage.sync.get({anonymity: true}, function (items) {
+    chrome.storage.sync.get({anonymity: false}, function (items) {
         if (items.anonymity === true) {
             chrome.runtime.onMessage.addListener(
                 function(request, sender, sendResponse) {
