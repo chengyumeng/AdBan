@@ -4,7 +4,8 @@ function doSimpleBlock() {
             $("#side").remove();
         }
         if (items.leftAd === true ) {
-            $("li:contains('广告')").remove();
+            $("li:contains('- 广告')").remove();
+            $("li:contains(' · 广告')").remove();
         }
         if (items.speedBlock === true) {
             // 我还没想好怎么实现
