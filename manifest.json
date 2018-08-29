@@ -25,8 +25,9 @@
       "48": "images/logo.png"
    },
    "manifest_version": 2,
-   "name": "AdBan",
+   "name": "AdBan 百度广告杀手",
+   "short_name": "AdBan",
    "permissions": [ "storage", "cookies", "webRequest", "webRequestBlocking", "*://*.baidu.com/*", "*://*.so.com/*", "tabs" ],
-   "version": "0.0.3",
+   "version": "0.0.4",
    "web_accessible_resources": [ "images/*" ]
 }
