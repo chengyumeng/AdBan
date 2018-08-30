@@ -28,6 +28,6 @@
    "name": "AdBan 百度广告杀手",
    "short_name": "AdBan",
    "permissions": [ "storage", "cookies", "webRequest", "webRequestBlocking", "*://*.baidu.com/*", "*://*.so.com/*", "tabs" ],
-   "version": "0.0.6",
+   "version": "0.0.8",
    "web_accessible_resources": [ "images/*" ]
 }
