@@ -49,7 +49,35 @@ function doKeyEvent(){
             location.href = "https://www.baidu.com/s?ie=utf-8&wd=" + keywordconvert;
             doSimpleBlock();
             doTuiguangBlock();
-
+        }
+    }
+    document.onclick = function (ev) {
+        if (ev.target.id === "su") {
+            var keyword = $("#kw").val();
+            var keywordconvert = keyword.replace(/#/g, "%23").replace(/&/g, "%26").replace(/\+/g, "%2B");
+            if (anonymity == true) {
+                chrome.runtime.sendMessage({greeting: "cleanCookies"}, function(response) {
+                    //
+                });
+            }
+            location.href = "https://www.baidu.com/s?ie=utf-8&wd=" + keywordconvert;
+            doSimpleBlock();
+            doTuiguangBlock();
+            return
+        }
+        if (ev.target.className == "pc" && ev.target.innerHTML.length > 0) {
+            var keyword = $("#kw").val();
+            var keywordconvert = keyword.replace(/#/g, "%23").replace(/&/g, "%26").replace(/\+/g, "%2B");
+            if (anonymity == true) {
+                chrome.runtime.sendMessage({greeting: "cleanCookies"}, function(response) {
+                    //
+                });
+            }
+            var pn = (ev.target.innerHTML -1) * 10
+            location.href = "https://www.baidu.com/s?ie=utf-8&wd=" + keywordconvert + "&pn=" + pn;
+            doSimpleBlock();
+            doTuiguangBlock();
+            return
         }
     }
 }
